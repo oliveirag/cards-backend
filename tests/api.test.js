@@ -52,7 +52,7 @@ describe('Health check', () => {
   test('GET /api/ping returns 200 and a message', async () => {
     const res = await request(app).get('/api/ping');
     expect(res.status).toBe(200);
-    expect(res.body.message).toBe('Hello Broken');
+    expect(res.body.message).toBe('Hello World');
   });
 });
 
